@@ -1,0 +1,59 @@
+:root {
+  font-size: 62.5%;
+  box-sizing: border-box;
+
+  --primary-color: #000;
+  --second-color: #6200ee;
+  --tertiary-color: #fff;
+
+  /* --elem-esp: 5rem; */
+}
+
+body {
+  margin: 0;
+  /* font-size: var(--elem-esp); */
+}
+
+.background-ps {
+  background-image: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--second-color)
+  );
+}
+
+/* .background-sp {} */
+
+/* Estilização da Capa de Apresentação */
+
+#capa {
+  height: 1080px;
+}
+
+#capa #row-capa {
+  position: absolute;
+  margin-left: 316px;
+  margin-top: 280px;
+
+  /* background-color: aqua; */
+}
+
+#row-capa img {
+  display: inline-block;
+  height: 400px;
+  width: 400px;
+
+  border-radius: 50%;
+  border: 2px solid var(--tertiary-color);
+  box-shadow: var(--tertiary-color) 0 0 15px;
+}
+
+#row-capa h1 {
+  display: inline-block;
+  color: var(--tertiary-color);
+
+  position: relative;
+
+  top: -180px;
+  left: 50px;
+}
