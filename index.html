@@ -12,11 +12,12 @@
     <meta charset="UTF-8" />
     <title>Minha Bibliografia</title>
 
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="switch.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/switch.css" />
+    <link rel="stylesheet" href="css/bibliografia.css" />
   </head>
   <body>
-    <nav>
+    <nav id="menu">
       <div id="dark-light">
         <p>Dark</p>
 
@@ -47,7 +48,7 @@
       <div id="row-capa">
         <img
           src="https://source.unsplash.com/random/461x461"
-          alt="Foto do GitHub"
+          alt="Foto alatória do Unsplash"
         />
 
         <h1>Lorem Ipsum é simplesmente uma</h1>
@@ -55,20 +56,31 @@
     </div>
 
     <div id="biografia" class="background-sp">
-      <div>
-        <h2>texto</h2>
+      <div class="grid-item texto">
+        <h2>
+          Lorem Ipsum é simplesmente uma simulação de texto da indústria
+          tipográfica e de impressos, e vem sendo utilizado desde o século XVI,
+          quando um impressor desconhecido pegou uma bandeja de tipos e os
+          embaralhou para fazer um livro de modelos de tipos.
+        </h2>
       </div>
 
-      <div>
-        <div>
-          <img src="" alt="Logo da Instituição" />
+      <div class="grid-item content">
+        <div class="grid-item-item1 item">
+          <img
+            src="https://source.unsplash.com/random/261x261"
+            alt="Logo da Instituição"
+          />
           <p>Curso Técnico em Informática Integrado ao Ensino Médio</p>
         </div>
 
-        <figure>
-          <img src="" alt="Logo da Instituição" />
+        <figure class="grid-item-item2 item">
+          <img
+            src="https://source.unsplash.com/random/261x261"
+            alt="Logo da Instituição"
+          />
           <figcaption>
-            Curso Técnico em Informática Integrado ao Ensino Médio
+            <p>Curso Técnico em Informática Integrado ao Ensino Médio</p>
           </figcaption>
         </figure>
       </div>
