@@ -42,12 +42,12 @@
 }
 
 input:checked + .slider {
-  background-color: var(--second-color);
-  box-shadow: var(--second-color) 0 0 15px;
+  background-color: var(--secondary-color);
+  box-shadow: var(--secondary-color) 0 0 15px;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px var(--second-color);
+  box-shadow: 0 0 1px var(--secondary-color);
 }
 
 input:checked + .slider:before {

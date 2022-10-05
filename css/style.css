@@ -3,11 +3,11 @@
   box-sizing: border-box;
 
   --primary-color: #000;
-  --second-color: #6200ee;
+  --secondary-color: #6200ee;
   --tertiary-color: #fff;
 
-  --dark-fume: rgba(0, 0, 0, 0.4);
-  --light-fume: rgba(255, 255, 255, 0.4);
+  --Bfume: rgba(0, 0, 0, 0.4);
+  --Wfume: rgba(255, 255, 255, 0.4);
 
   --borda-semi-redonda: 1.2rem 0 1.2rem 0;
 
@@ -24,11 +24,17 @@ body {
   background-image: linear-gradient(
     to right,
     var(--primary-color),
-    var(--second-color)
+    var(--secondary-color)
   );
 }
 
-/* .background-sp {} */
+.background-sp {
+  background-image: linear-gradient(
+    to left,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+}
 
 h1 {
   font-size: 40px;
@@ -37,6 +43,10 @@ h1 {
 h2 {
   font-size: 3.5rem;
   color: var(--tertiary-color);
+}
+
+p {
+  font-size: 1.8rem;
 }
 
 /*Estilização do menu*/
@@ -51,9 +61,9 @@ h2 {
 }
 
 #menu ul {
-  margin: 0;
   display: inline-block;
   float: right;
+  margin: 0;
 }
 
 #menu li {
