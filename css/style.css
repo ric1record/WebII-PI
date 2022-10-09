@@ -2,16 +2,25 @@
   font-size: 62.5%;
   box-sizing: border-box;
 
+  /* --borda-semi-redonda: 1.2rem 0 1.2rem 0; */
+
+  /* --elem-esp: 5rem; */
+}
+
+.dark-mode {
   --primary-color: #000;
   --secondary-color: #6200ee;
   --tertiary-color: #fff;
-
-  --Bfume: rgba(0, 0, 0, 0.4);
   --Wfume: rgba(255, 255, 255, 0.4);
+  --Bfume: rgba(0, 0, 0, 0.4);
+}
 
-  --borda-semi-redonda: 1.2rem 0 1.2rem 0;
-
-  /* --elem-esp: 5rem; */
+.light-mode {
+  --primary-color: #fff;
+  --secondary-color: #6200ee;
+  --tertiary-color: #000;
+  --Bfume: rgba(255, 255, 255, 0.4);
+  --Wfume: rgba(0, 0, 0, 0.4);
 }
 
 body {

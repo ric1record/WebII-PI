@@ -15,15 +15,39 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/switch.css" />
     <link rel="stylesheet" href="css/bibliografia.css" />
+
+    <script defer>
+      function changeTheme() {
+        let text = document.getElementById("dark-text");
+        let body = document.getElementById("body");
+
+        body.classList.replace(
+          `${text.innerHTML == "Dark" ? "dark-mode" : "light-mode"}`,
+          `${text.innerHTML == "Light" ? "dark-mode" : "light-mode"}`
+        );
+
+        text.innerHTML = text.innerHTML == "Dark" ? "Light" : "Dark";
+      }
+
+      function setTheme() {
+        let hour = new Date().getHours();
+        let body = document.getElementById("body");
+
+        body.classList.replace(
+          `${hour >= 6 && hour < 18 ? "dark-mode" : "light-mode"}`,
+          `${hour < 6 || hour >= 18 ? "dark-mode" : "light-mode"}`
+        );
+      }
+    </script>
   </head>
-  <body>
+  <body id="body" class="dark-mode" onload="setTheme()">
     <nav id="menu">
       <div id="dark-light">
-        <p>Dark</p>
+        <p id="dark-text">Dark</p>
 
         <!-- Rounded switch -->
         <label class="switch">
-          <input type="checkbox" />
+          <input type="checkbox" onclick="changeTheme()" />
           <span class="slider round"></span>
         </label>
       </div>
